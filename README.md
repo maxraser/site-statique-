@@ -3,7 +3,7 @@
 ## objectif
 - un site statique 
 ## technologies utilisées
-- Visual Studio Code(CSS et HTML)
+- Visual Studio Code (CSS et HTML)
 - Terminal
 - Chromium
 ## Lien vers la maquette Figma 
