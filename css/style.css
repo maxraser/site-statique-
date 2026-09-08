@@ -1,4 +1,48 @@
-h1 {
-    background-color: blue;
-    color: aqua;
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Merriweather";
+}
+nav {
+    display: flex;
+    height: 84px;
+    width: 100%;
+    max-width:  1920px;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    align-items: center;
+}
+nav div {
+    display: flex;
+    gap: 60px;
+}
+nav div a {
+    display: flex;
+    align-items: center;
+    color: #000;
+    text-decoration: none;
+    
+}
+.buttoon{
+    display: flex;
+    padding-block: 24px;
+    padding-inline: 40px;
+    border:none;   
+    background-color: #020E35;
+    color: #FFF;
+    font-weight: 700;
+    gap: 4px;
+    margin-right: 150px;
+}
+.underlinetext{
+    
+    text-decoration: underline #ff5678  4px; 
+    text-underline-offset: 8px;
+}
+#logo_zebb{
+    height: 41px;
+    margin-left: 150px;
+}
+main{
+    margin: 0 150px;
 }
