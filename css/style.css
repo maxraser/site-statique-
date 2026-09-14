@@ -1,54 +1,48 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: "Merriweather";
     box-sizing: border-box;
 }
+
 nav {
     display: flex;
+    padding: 0 150px;
     height: 84px;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0px 8px 20px 5px #00000014;
 
 }
+
 nav div {
     display: flex;
     gap: 60px;
 }
+
 nav div a {
     display: flex;
     align-items: center;
     color: #000;
     text-decoration: none;
-    
-}
-#buttoon{
-    display: flex;
-    padding-block: 24px;
-    padding-inline: 40px;
-    border:none;   
-    background: rgba(2, 14, 53, 1);
-    color: #FFF;
-    font-weight: 700;
-    gap: 4px;
-    margin-right: 150px;
-    box-shadow: 0px 8px 20px 5px #00000014;
 
 }
-.underlinetext{
-    
-    text-decoration: underline #ff5678  4px; 
+
+
+.underlinetext {
+
+    text-decoration: underline #ff5678 4px;
     text-underline-offset: 8px;
 }
-#logo_zebb{
+
+#logo_zebb {
     height: 41px;
-    margin-left: 150px;
 }
-main{
-    margin: 0 150px;
+
+main {
+    padding: 0 150px;
 }
+
 .hero {
     display: flex;
     justify-content: space-between;
@@ -65,6 +59,7 @@ main{
     height: 508px;
 
 }
+
 #BRANDS {
     display: inline-block;
     color: #FFF;
@@ -74,32 +69,111 @@ main{
 
 
 }
-.button{
-    display: flex;
+
+.button {
     padding-block: 24px;
     padding-inline: 40px;
-    border:none;   
+    border: none;
     background: rgba(2, 14, 53, 1);
-    box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
     color: #FFF;
     font-weight: 900;
     font-size: 18px;
 }
-.Brands{
+
+main .button {
+    box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.25);
+}
+
+.Brands {
     display: flex;
     flex-direction: column;
-    width: 548px;   
+    width: 548px;
     justify-content: space-between;
 }
-    
 
-.Brands .button{
+
+.Brands .button {
     margin-right: auto;
     margin-bottom: 51px;
 }
-h1{
+
+h1 {
     font-size: 76px;
     line-height: 110px;
     font-weight: 900;
-      
+
+}
+
+.powwer {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 100px 0
+}
+
+#gens {
+    border-radius: 500px;
+    background: rgba(255, 238, 246, 0.2);
+    width: 592px;
+    height: 508px;
+}
+
+h2 {
+    font-size: 54px;
+    font-weight: 700;
+    padding: 0;
+    line-height: 62px;
+    left: 5px;
+    position: relative;
+}
+
+.powwer p {
+    font-size: 18px;
+    padding-top: 43px;
+}
+
+.talented {
+    display: inline-block;
+    background: linear-gradient(transparent 55%, #ff5b75 55%);
+    padding-right: 10px;
+}
+
+
+#playbutton {
+    display: block;
+    outline: none;
+    background: transparent;
+    border: none;
+}
+
+.powwer>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 517px;
+    height: 435px;
+    gap: 60px;
+    box-sizing: border-box;
+}
+
+.diva {
+    display: flex;
+    flex-direction: row;
+    gap: 63px;
+
+
+}
+
+.powwer>div>.diva>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.diva>div {
+    gap: 23px;
+}
+
+.powwer>div>div {
+    gap: 63px;
 }
