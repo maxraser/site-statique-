@@ -14,6 +14,7 @@ section:nth-of-type(n+2) {
   padding-bottom: 100px;
   padding-top: 100px;
 }
+
 h1 {
   font-size: 76px;
   line-height: 110px;
@@ -22,7 +23,8 @@ h1 {
 
 h2,
 h3,
-h4 {
+h4,
+h5 {
   font-size: 54px;
   font-weight: 700;
 }
@@ -36,6 +38,12 @@ h1 {
 h2 {
   left: 5px;
   position: relative;
+}
+
+h5 {
+  display: flex;
+  gap: 104px;
+  justify-content: center;
 }
 
 .button {
@@ -261,4 +269,60 @@ nav div a {
 .ourCustomers p {
   font-size: 18px;
   width: 481px;
+}
+
+/*new refactoring*/
+.MeetTheTeam>div {
+  display: flex;
+  flex-direction: column;
+  gap: 51px;
+}
+
+.FLine {
+  display: grid;
+  grid-row: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 19px;
+  align-items: center;
+}
+
+.gapint{
+  gap: 32px;
+}
+
+.krug {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 238, 246, 1);
+  border-radius: 50%;
+}
+
+.Who {
+  display: flex;
+  font-size: 28px;
+}
+
+.QQ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.one
+ {
+  display: grid;
+  border: 1px solid rgba(184, 184, 184, 1);
+  width: 519px;
+  height: 519px;
+  gap: 60px;
+  border-radius: 50px;
+  justify-content: center;
+  padding: 88px 0px;
+}
+
+.Mark {
+  width: 539px;
+  height: 539px;
+  box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.15);
 }
