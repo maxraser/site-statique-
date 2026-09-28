@@ -15,112 +15,99 @@
 
 <body>
     <nav>
-        <img src="./Desktop/Logo.svg" alt="Logo Zebb" class="logo_zebb">
+        <img src="./Desktop/Logo.svg" alt="Logo Zebb" class="nav__logo">
         <div>
-            <a href="#home" class="underlinetext">HOME</a>
-            <a href="#about">ABOUT</a>
-            <a href="#services">SERVICES</a>
-            <a href="#our_work">OUR WORK</a>
+            <a href="#home" class="nav__link nav__link--active">HOME</a>
+            <a href="#about" class="nav__link">ABOUT</a>
+            <a href="#services" class="nav__link">SERVICES</a>
+            <a href="#our_work" class="nav__link">OUR WORK</a>
             <span>
                 <button class="button">CONTACT US</button>
             </span>
         </div>
     </nav>
     <main>
-        <section class="premiersection">
-            <div class="Brands">
-                <h1>We help to Create <span class="BRANDS">Brands</span> With Coffee</h1>
+        <section class="hero">
+            <div class="hero__content">
+                <h1>We help to Create <span class="highlight">Brands</span> With Coffee</h1>
                 <button class="button">See our work</button>
-            </div>
-            <img src="./Desktop/Illustration.svg" alt="Photo d'un verre de café" id="verre">
+            </div> <img src="./Desktop/Illustration.svg" alt="Photo d'un verre de café" class="hero__image">
         </section>
-
-
-        <section class="talantedPeople">
-            <img src="./Desktop/lol.svg" alt="groupe de gens" id="gens">
-            <div>
+        <section class="about">
+            <img src="./Desktop/lol.svg" alt="groupe de gens" class="about__image">
+            <div class="about__content">
                 <div>
-                    <h2>Powered by
-
-                        <span class="line">talented people</span>
-                    </h2>
-                    <p>But I must explain to you how all |
-                        thismistaken idea of denouncing pleasure and praising pain was
-                        born
-                        and I will give you a complete account of the system.</p>
-                    <p>
-                        I wrote to let them know ready to came back they kicked me of their team slack all of us
-                        are make company email.
-                    </p>
+                    <h2>Powered by <span class="line">talented people</span></h2>
+                    <p>But I must explain to you how all thismistaken idea of denouncing pleasure and praising pain was
+                        born and I will give you a complete account of the system.</p>
+                    <p>I wrote to let them know ready to came back they kicked me of their team slack all of us are make
+                        company email.</p>
                 </div>
-                <div class="ButtonConteiner">
+                <div class="about__actions">
                     <button class="button">Learn more</button>
                     <div>
-
-                        <button id="playbutton"> <img src="./Desktop/Play.svg" alt="play button"></button>
+                        <button class="play-button"> <img src="./Desktop/Play.svg" alt="play button"></button>
                         <label>Watch videos</label>
                     </div>
                 </div>
             </div>
         </section>
-
-        <section class="ThingWeEnjoy">
-            <div>
-                <div>
+        <section class="services">
+            <div class="services__inner">
+                <div class="services__col">
                     <h3 class="line">Things We Enjoy</h3>
-                    <div class="listeServices">
-                        <div class="Service">
-                            <p class="number">04</p>
-                            <div class="textBlok">
-                                <p class="headText">Content writing</p>
+                    <div class="services__list">
+                        <div class="service">
+                            <p class="service__number">04</p>
+                            <div class="service__text">
+                                <p class="service__title">Content writing</p>
                                 <p>But I must explain to you how all this mistaken idea of denouncing pleasure</p>
                             </div>
                         </div>
-                        <div class="Service">
-                            <p class="number">05</p>
-                            <div class="textBlok">
-                                <p class="headText">Video Production</p>
+                        <div class="service">
+                            <p class="service__number">05</p>
+                            <div class="service__text">
+                                <p class="service__title">Video Production</p>
                                 <p>But I must explain to you how all this mistaken idea of denouncing pleasure</p>
                             </div>
                         </div>
-                        <div class="Service">
-                            <p class="number">06</p>
-                            <div class="textBlok">
-                                <p class="headText">Social media marketing</p>
+                        <div class="service">
+                            <p class="service__number">06</p>
+                            <div class="service__text">
+                                <p class="service__title">Social media marketing</p>
                                 <p>But I must explain to you how all this mistaken idea of denouncing pleasure</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="listeServices paddingList">
-                    <div class="Service">
-                        <p class="number">01</p>
-                        <div class="textBlok">
-                            <p class="headText">Digital Illustration</p>
+                <div class="services__list services__list--offset">
+                    <div class="service">
+                        <p class="service__number">01</p>
+                        <div class="service__text">
+                            <p class="service__title">Digital Illustration</p>
                             <p>But I must explain to you how all this mistaken idea of denouncing pleasure</p>
                         </div>
                     </div>
-                    <div class="Service">
-                        <p class="number">02</p>
-                        <div class="textBlok">
-                            <p class="headText">Website design & development</p>
+                    <div class="service">
+                        <p class="service__number">02</p>
+                        <div class="service__text">
+                            <p class="service__title">Website design & development</p>
                             <p>But I must explain to you how all this mistaken idea of denouncing pleasure</p>
                         </div>
                     </div>
-                    <div class="Service">
-                        <p class="number">03</p>
-                        <div class="textBlok">
-                            <p class="headText">Social media management</p>
+                    <div class="service">
+                        <p class="service__number">03</p>
+                        <div class="service__text">
+                            <p class="service__title">Social media management</p>
                             <p>But I must explain to you how all this mistaken idea of denouncing pleasure</p>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-            <div class="circle"></div>
+            <div class="services__circle"></div>
         </section>
-        <section class="ourCustomers">
-            <div>
+        <section class="customers">
+            <div class="customers__content">
                 <div>
                     <h4>We craft experiences for business to help reach <span class="line">our customers</span></h4>
                 </div>
@@ -128,219 +115,221 @@
                     and I will give you a complete account of the system.</p>
                 <button class="button">Learn more</button>
             </div>
-            <img src="./Desktop/parni.svg" alt="beaucoup de gens en cafe" id="bdgec">
+            <img src="./Desktop/parni.svg" alt="beaucoup de gens en cafe" class="customers__image">
         </section>
-        <section class="MeetTheTeam">
-            <p class="line">Meet the team</p>
-            <div>
-                <div class="FLine">
-                    <div class="one">
-                        <div class="krug"></div>
-                        <div class="QQ">
-                            <p class="Who">Samantha Jones</p>
-                            <p class="Place">Illustrator</p>
+        <section class="team">
+            <p class="team__title line">Meet the team</p>
+            <div class="team__content">
+                <div class="team__row">
+                    <div class="team-card">
+                        <div class="team-card__avatar"></div>
+                        <div class="team-card__info">
+                            <p class="team-card__name">Samantha Jones</p>
+                            <p class="team-card__role">Illustrator</p>
                         </div>
                     </div>
-                    <div class="one Mark">
-                        <div class="krug"></div>
-                        <div class="QQ">
-                            <p class="Who">Mark Ali</p>
-                            <p class="Place">Owner Creative Director</p>
-                            <p class="Place">See Details</p>
+                    <div class="team-card team-card--featured">
+                        <div class="team-card__avatar"></div>
+                        <div class="team-card__info">
+                            <p class="team-card__name">Mark Ali</p>
+                            <p class="team-card__role">Owner Creative Director</p>
+                            <p class="team-card__role">See Details</p>
                         </div>
                     </div>
-                    <div class="one">
-                        <div class="krug"></div>
-                        <div class="QQ">
-                            <p class="Who">Davi John</p>
-                            <p class="Place">Head of Marketing</p>
+                    <div class="team-card">
+                        <div class="team-card__avatar"></div>
+                        <div class="team-card__info">
+                            <p class="team-card__name">Davi John</p>
+                            <p class="team-card__role">Head of Marketing</p>
                         </div>
                     </div>
                 </div>
-                <div class="FLine gapint">
-                    <div class="one">
-                        <div class="krug"></div>
-                        <div class="QQ">
-                            <p class="Who">John Daen</p>
-                            <p class="Place">Graphic Designer</p>
+                <div class="team__row team__row--spaced">
+                    <div class="team-card">
+                        <div class="team-card__avatar"></div>
+                        <div class="team-card__info">
+                            <p class="team-card__name">John Daen</p>
+                            <p class="team-card__role">Graphic Designer</p>
                         </div>
                     </div>
-                    <div class="one">
-                        <div class="krug"></div>
-                        <div class="QQ">
-                            <p class="Who">Alice Kate</p>
-                            <p class="Place">Social Media Manager</p>
+                    <div class="team-card">
+                        <div class="team-card__avatar"></div>
+                        <div class="team-card__info">
+                            <p class="team-card__name">Alice Kate</p>
+                            <p class="team-card__role">Social Media Manager</p>
                         </div>
                     </div>
-                    <div class="one">
-                        <div class="krug"></div>
-                        <div class="QQ">
-                            <p class="Who">Jhang Yui</p>
-                            <p class="Place">Web Designer & Developer</p>
+                    <div class="team-card">
+                        <div class="team-card__avatar"></div>
+                        <div class="team-card__info">
+                            <p class="team-card__name">Jhang Yui</p>
+                            <p class="team-card__role">Web Designer & Developer</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="PreviousWork">
-            <h4>Some of our <snap class="line">Previous Work</snap>
-            </h4>
-            <div class="fillter">
-                <a class="B" id="All">ALL</a>
-                <a class="B">Illustration</a>
-                <a class="B">App</a>
-                <a class="B">Branding</a>
+        <section class="portfolio">
+            <h4>Some of our <span class="line">Previous Work</span></h4>
+            <div class="portfolio__filter">
+                <a class="portfolio__filter-btn portfolio__filter-btn--active">ALL</a>
+                <a class="portfolio__filter-btn">Illustration</a>
+                <a class="portfolio__filter-btn">App</a>
+                <a class="portfolio__filter-btn">Branding</a>
             </div>
-            <div class="collum">
-                <div class="first"></div>
-                <div class="second"></div>
-                <div class="long"></div>
-                <div class="hiht"></div>
-                <div class="two"></div>
-                <div class="two"></div>
+            <div class="portfolio__grid">
+                <div class="portfolio__item portfolio__item--tall-left"></div>
+                <div class="portfolio__item portfolio__item--bottom-left"></div>
+                <div class="portfolio__item portfolio__item--wide"></div>
+                <div class="portfolio__item portfolio__item--center"></div>
+                <div class="portfolio__item portfolio__item--small"></div>
+                <div class="portfolio__item portfolio__item--small"></div>
             </div>
             <button class="button">See More</button>
         </section>
-        <section class="Testimonial">
-            <div class="tete4">
+        <section class="testimonials">
+            <div class="testimonials__header">
                 <h4>Testimonial</h4>
                 <p>Over 18,000 happy clients</p>
             </div>
-            <div class="profills">
-                <div class="profil">
-                    <div class="hautpart">
-                        <a class="Photo"></a>
+            <div class="testimonials__track">
+                <div class="testimonial-card">
+                    <div class="testimonial-card__top">
+                        <a class="testimonial-card__photo"></a>
                         <img src="./Desktop/Star.svg" alt="cinq étoile">
                         <a>“My experience with Mark is a complete success, from customer service, wide rang of products,
                             clean store, purchasing experience</a>
                     </div>
-                    <div class="baspart">
+                    <div class="testimonial-card__bottom">
                         <a>Samantha Kate</a>
                         <a>CEO of Floatcom</a>
                     </div>
                 </div>
-                <div class="profil">
-                    <div class="hautpart">
-                        <a class="Photo"></a>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__top">
+                        <a class="testimonial-card__photo"></a>
                         <img src="./Desktop/Star.svg" alt="cinq étoile">
                         <a>“My experience with Mark is a complete success, from customer service, wide rang of products,
                             clean store, purchasing experience</a>
                     </div>
-                    <div class="baspart">
+                    <div class="testimonial-card__bottom">
                         <a>Samantha Kate</a>
                         <a>CEO of Floatcom</a>
                     </div>
                 </div>
-                <div class="profil Spes">
-                    <div class="hautpart">
-                        <a class="Photo"></a>
+                <div class="testimonial-card testimonial-card--tall">
+                    <div class="testimonial-card__top">
+                        <a class="testimonial-card__photo"></a>
                         <img src="./Desktop/Star.svg" alt="cinq étoile">
                         <a>“My experience with Mark is a complete success, from customer service, wide rang of products,
                             clean store, purchasing experience</a>
                     </div>
-                    <div class="baspart">
+                    <div class="testimonial-card__bottom">
                         <a>Samantha Kate</a>
                         <a>CEO of Floatcom</a>
                     </div>
                 </div>
-                <div class="profil">
-                    <div class="hautpart">
-                        <a class="Photo"></a>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__top">
+                        <a class="testimonial-card__photo"></a>
                         <img src="./Desktop/Star.svg" alt="cinq étoile">
                         <a>“My experience with Mark is a complete success, from customer service, wide rang of products,
                             clean store, purchasing experience</a>
                     </div>
-                    <div class="baspart">
+                    <div class="testimonial-card__bottom">
                         <a>Samantha Kate</a>
                         <a>CEO of Floatcom</a>
                     </div>
                 </div>
-                <div class="profil">
-                    <div class="hautpart">
-                        <a class="Photo"></a>
+                <div class="testimonial-card">
+                    <div class="testimonial-card__top">
+                        <a class="testimonial-card__photo"></a>
                         <img src="./Desktop/Star.svg" alt="cinq étoile">
                         <a>“My experience with Mark is a complete success, from customer service, wide rang of products,
                             clean store, purchasing experience</a>
                     </div>
-                    <div class="baspart">
+                    <div class="testimonial-card__bottom">
                         <a>Samantha Kate</a>
                         <a>CEO of Floatcom</a>
                     </div>
                 </div>
             </div>
-            <div class="LRBS">
-                <button class="LRB"><img src="./Desktop/Left.svg" alt="Left button"></button>
-                <button class="LRB"><img src="./Desktop/Right.svg" alt="Right button"></button>
+            <div class="testimonials__nav">
+                <button class="arrow-button"><img src="./Desktop/Left.svg" alt="Left button"></button>
+                <button class="arrow-button"><img src="./Desktop/Right.svg" alt="Right button"></button>
             </div>
         </section>
-        <section class="Needhelp">
-            <form class="text" action="#" method="get" aria-hidden="true"></form>
-
-            <div class=" tabloo">
-                <h3 class="33">Need Help Making Coffee? <span class="line">Contact Us</span></h3>
+        <section class="contact">
+            <form class="decor-circle" action="#" method="get" aria-hidden="true"></form>
+            <div class="contact__content">
+                <h3 class="contact__title">Need Help Making Coffee? <span class="line">Contact Us</span></h3>
                 <div>
-                    <form class="senddata">
-                        <div class="gapdvad">
-                            <label for="nameInput">Name:</label>
-                            <input type="text" id="nameInput">
+                    <form class="form">
+                        <div class="form__group">
+                            <label for="contact-name">Name:</label>
+                            <input type="text" id="contact-name">
                         </div>
-                        <div class="gapdvad">
-                            <label for="emailInput">Email:</label>
-                            <input type="email" id="emailInput">
+                        <div class="form__group">
+                            <label for="contact-email">Email:</label>
+                            <input type="email" id="contact-email">
                         </div>
-                        <div class="gapdvad">
-                            <label for="messageInput">Message:</label>
-                            <textarea id="messageInput"></textarea>
+                        <div class="form__group">
+                            <label for="contact-message">Message:</label>
+                            <textarea id="contact-message"></textarea>
                         </div>
                         <button class="button" type="submit">Send</button>
                     </form>
                 </div>
             </div>
-
         </section>
-        <section class="Needhelp">
-            <div class=" tabloo">
-                <h3 class="33">Join Our Newsletters & get <span class="line">Coffee Formula!</span></h3>
+        <section class="newsletter">
+            <div class="newsletter__content">
+                <h3 class="newsletter__title">Join Our Newsletters & get <span class="line">Coffee Formula!</span></h3>
                 <div>
-                    <form class="senddata">
-                        <div class="gapdvad">
-                            <label for="nameInput">Name:</label>
-                            <input type="text" id="nameInput">
+                    <form class="form">
+                        <div class="form__group">
+                            <label for="news-name">Name:</label>
+                            <input type="text" id="news-name">
                         </div>
-                        <div class="gapdvad">
-                            <label for="emailInput">Email:</label>
-                            <input type="email" id="emailInput">
+                        <div class="form__group">
+                            <label for="news-email">Email:</label>
+                            <input type="email" id="news-email">
                         </div>
                         <button class="button" type="submit">Send</button>
                     </form>
                 </div>
             </div>
-            <form class="text" action="#" method="get" aria-hidden="true"></form>
+            <form class="decor-circle" action="#" method="get" aria-hidden="true"></form>
         </section>
     </main>
     <footer class="footer">
-        <div class="krugl"></div>
-        <div class="tablica">
-
-            <div class="treetwo">
-                <img src="./Desktop/Logo.svg" alt="Logo Zebb" class="logo_zebb">
-                <div class="ikonki">
-                    <a href="#Facebook"><img src="./Desktop/num1.svg" alt="logo Facebook" class="logos"></a>
-                    <a href="#Instagram"><img src="./Desktop/num2.svg" alt="logo Instagram" class="logos"></a>
-                    <a href="#LinkedIn"><img src="./Desktop/num3.svg" alt="logo LinkedIn" class="logos"></a>
-                    <a href="#Dribbble"><img src="./Desktop/num4.svg" alt="logo Dribbble" class="logos"></a>
-                    <a href="#Twitther"><img src="./Desktop/num5.svg" alt="logo Twitther" class="logos"></a>
+        <div class="footer__circle footer__circle--left"></div>
+        <div class="footer__main">
+            <div class="footer__brand">
+                <img src="./Desktop/Logo.svg" alt="Logo Zebb" class="nav__logo">
+                <div class="footer__socials">
+                    <a href="#Facebook"><img src="./Desktop/num1.svg" alt="logo Facebook"
+                            class="footer__social-icon"></a>
+                    <a href="#Instagram"><img src="./Desktop/num2.svg" alt="logo Instagram"
+                            class="footer__social-icon"></a>
+                    <a href="#LinkedIn"><img src="./Desktop/num3.svg" alt="logo LinkedIn"
+                            class="footer__social-icon"></a>
+                    <a href="#Dribbble"><img src="./Desktop/num4.svg" alt="logo Dribbble"
+                            class="footer__social-icon"></a>
+                    <a href="#Twitther"><img src="./Desktop/num5.svg" alt="logo Twitther"
+                            class="footer__social-icon"></a>
                 </div>
-                <div class="odinsix">
-                    <b><p>Address</p></b>
+                <div class="footer__address">
+                    <b>
+                        <p>Address</p>
+                    </b>
                     <p>+123 654 987</p>
                     <p>877 The Bronx, NY 14568 USA</p>
                 </div>
             </div>
-
-            <div class="odsev">
+            <div class="footer__col">
                 <b><a href="#Sercices">Services</a></b>
-                <div class="odsix">
+                <div class="footer__links">
                     <a href="#SearchEngineOptimization">Search Engine Optimization</a>
                     <a href="#WebDesign&Development">Web design & development</a>
                     <a href="#SocialMediaManagement">Social media management</a>
@@ -349,40 +338,40 @@
                     <a href="#VideoProduction">Video production</a>
                 </div>
             </div>
-            <div class="odsev">
+            <div class="footer__col">
                 <b><a href="#Company">Company</a></b>
-                <div class="odsix">
+                <div class="footer__links">
                     <a href="#">Case Studies</a>
                     <a href="#WebDesign&Services">Web design & Services</a>
                     <a href="#About">About</a>
                     <a href="#ContactUs">Contact Us</a>
                 </div>
             </div>
-            <div class="odsev">
+            <div class="footer__col">
                 <b><a href="#AboutUs">About Us</a></b>
-                <div class="odsix">
+                <div class="footer__links">
                     <a href="#Featuredartists">Featured artists</a>
                     <a href="#ThePortal">The Portal</a>
                     <a href="#LiveEvents">Live events</a>
                 </div>
             </div>
-            <div class="odsev">
+            <div class="footer__col">
                 <b><a href="#LegalStuff">Legal Stuff</a></b>
-                <div class="odsix">
+                <div class="footer__links">
                     <a href="#Shipping&Delivery">Shipping & Delivery</a>
                     <a href="#Terms&Conditions">Terms & Conditions</a>
                     <a href="#Privacy&Policy">Privacy & Policy</a>
                 </div>
             </div>
         </div>
-        <div class="nizz">
-            <p class="white"><u>Copyright ©2020 Zebb Agency. All Right Reserved</u></p>
-            <div class="RightSide">
-                <a href="#cookies" class="white">Cookie Policy</a>
-                <a href="#Privacy" class="white">Privacy Policy</a>
+        <div class="footer__bottom">
+            <p class="footer__text-light">Copyright ©2020 Zebb Agency. All Right Reserved</p>
+            <div class="footer__legal">
+                <a href="#cookies" class="footer__text-light">Cookie Policy</a>
+                <a href="#Privacy" class="footer__text-light">Privacy Policy</a>
             </div>
         </div>
-        <div class="krugr"></div>
+        <div class="footer__circle footer__circle--right"></div>
     </footer>
 </body>
 

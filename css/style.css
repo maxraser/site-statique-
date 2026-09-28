@@ -1,3 +1,4 @@
+/* 1. RESET & BASE */
 * {
   padding: 0;
   margin: 0;
@@ -10,10 +11,10 @@ main {
 }
 
 section:nth-of-type(n+2) {
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding-block: 100px;
 }
 
+/* 2. TYPOGRAPHY */
 h1 {
   font-size: 76px;
   line-height: 110px;
@@ -28,15 +29,9 @@ h5 {
   font-weight: 700;
 }
 
-h1 {
-  font-size: 76px;
-  line-height: 110px;
-  font-weight: 900;
-}
-
 h2 {
-  left: 5px;
   position: relative;
+  left: 5px;
 }
 
 h5 {
@@ -45,9 +40,17 @@ h5 {
   justify-content: center;
 }
 
+/* 3. REUSABLE COMPONENTS */
+a {
+  display: flex;
+  align-items: center;
+  color: rgba(2, 14, 53, 1);
+  text-decoration: none;
+}
+
 .button {
-  padding-block: 24px;
-  padding-inline: 40px;
+  display: grid;
+  padding: 24px 40px;
   border: none;
   background: rgba(2, 14, 53, 1);
   color: #FFF;
@@ -62,7 +65,6 @@ main .button {
 .line {
   position: relative;
   overflow: visible;
-  padding-right: 10px;
   display: inline-block;
   align-self: flex-start;
 }
@@ -70,15 +72,87 @@ main .button {
 .line::after {
   content: '';
   position: absolute;
-  left: 0;
-  bottom: 0px;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background: linear-gradient(transparent 55%, #ff5b75 55%);
   z-index: -1;
-  padding-right: 10px;
 }
 
+.highlight {
+  display: inline-block;
+  color: #FFF;
+  background-color: #ff5678;
+  line-height: 0.9;
+  padding-top: 4px;
+}
+
+.nav__link {
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+}
+
+.nav__link--active {
+  text-decoration: underline #ff5678 4px;
+  text-underline-offset: 8px;
+}
+
+.nav__logo {
+  display: flex;
+  height: 41px;
+  gap: 4px;
+}
+
+/* 4. SHARED FLEX PATTERNS */
+
+/* Flex column */
+.hero__content,
+.about__content,
+.services__col,
+.services__list,
+.service__text,
+.customers__content,
+.team__content,
+.team-card__info,
+.testimonials,
+.testimonials__header,
+.testimonial-card,
+.contact__content,
+.newsletter__content,
+.form,
+.form__group,
+.footer,
+.footer__col,
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Flex row + space-between */
+.hero,
+.about,
+.services__inner,
+.customers,
+.contact,
+.newsletter,
+.footer__main,
+.footer__bottom,
+.testimonials__nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Flex row + align-items: center */
+a,
+.about__actions > div,
+.portfolio__filter,
+.team-card__info,
+.testimonials__track {
+  display: flex;
+  align-items: center;
+}
+
+/* 5. NAV */
 nav {
   display: flex;
   padding: 0 150px;
@@ -93,157 +167,109 @@ nav div {
   gap: 60px;
 }
 
-a {
-  display: flex;
-  align-items: center;
-  color: #000;
-  text-decoration: none;
-}
-
-.underlinetext {
-  text-decoration: underline #ff5678 4px;
-  text-underline-offset: 8px;
-}
-
-.logo_zebb {
-  display: flex;
-  height: 41px;
-  gap: 4px;
-}
-
-.premiersection {
-  display: flex;
-  justify-content: space-between;
+/* 6. HERO */
+.hero {
   padding-top: 300px;
   padding-bottom: 200px;
   gap: 56px;
   width: 100%;
 }
 
-.Brands {
-  display: flex;
-  flex-direction: column;
+.hero__content {
   width: 548px;
   justify-content: space-between;
 }
 
-.Brands .button {
+.hero__content .button {
   margin-right: auto;
   margin-bottom: 51px;
 }
 
-.BRANDS {
-  display: inline-block;
-  color: #FFF;
-  background-color: #ff5678;
-  line-height: 0.9;
-  padding-top: 4px;
-}
-
-#verre {
+.hero__image {
   border-radius: 200px;
   background: rgba(255, 238, 246, 0.2);
   width: 592px;
   height: 508px;
 }
 
-.talantedPeople {
-  display: flex;
-  justify-content: space-between;
-}
-
-#gens {
+/* 7. ABOUT */
+.about__image {
   border-radius: 500px;
   background: rgba(255, 238, 246, 0.2);
   width: 592px;
   height: 508px;
 }
 
-.talantedPeople>div {
-  display: flex;
-  flex-direction: column;
+.about__content {
   width: 517px;
   height: 435px;
   gap: 60px;
 }
 
-.talantedPeople p {
+.about__content p {
   font-size: 18px;
   padding-top: 43px;
 }
 
-.ButtonConteiner {
+.about__actions {
   display: flex;
   gap: 63px;
 }
 
-.ButtonConteiner>div {
-  display: flex;
-  align-items: center;
+.about__actions > div {
   gap: 23px;
 }
 
-#playbutton {
+.play-button {
   display: block;
   outline: none;
   background: transparent;
   border: none;
 }
 
-.ThingWeEnjoy {
+/* 8. SERVICES */
+.services {
   position: relative;
 }
 
-.ThingWeEnjoy>div:not(.krug) {
-  display: flex;
-  justify-content: space-between;
-}
-
-.ThingWeEnjoy>div>div:first-child {
-  display: flex;
-  flex-direction: column;
+.services__col {
   gap: 120px;
 }
 
-.listeServices {
-  display: flex;
+.services__list {
   gap: 40px;
-  flex-direction: column;
   width: 543px;
 }
 
-.paddingList {
+.services__list--offset {
   padding-top: 91px;
 }
 
-.Service {
+.service {
   display: flex;
-  flex-direction: row;
   width: 100%;
   gap: 40px;
 }
 
-.number {
+.service__number {
   font-size: 64px;
   color: transparent;
   -webkit-text-stroke: 1px rgba(2, 14, 53, 1);
 }
 
-.textBlok {
-  display: flex;
-  flex-direction: column;
+.service__text {
   gap: 20px;
 }
 
-.headText {
+.service__title {
   font-size: 28px;
 }
 
-.textBlok p:not(.headText) {
+.service__text p:not(.service__title) {
   font-size: 18px;
 }
 
-.circle {
+.services__circle {
   position: absolute;
   z-index: -1;
   top: 187px;
@@ -254,87 +280,32 @@ a {
   background: #ffeef6;
 }
 
-.ourCustomers {
-  display: flex;
-  justify-content: space-between;
-}
-
-.ourCustomers>div {
-  display: flex;
-  flex-direction: column;
+/* 9. CUSTOMERS */
+.customers__content {
   justify-content: center;
   gap: 60px;
   width: 664px;
   align-items: flex-start;
 }
 
-.ourCustomers p {
+.customers__content p {
   font-size: 18px;
   width: 481px;
 }
 
-/*new refactoring*/
-.MeetTheTeam>div {
-  display: flex;
-  flex-direction: column;
-  gap: 51px;
-  align-items: center;
-}
-
-#bdgec {
+.customers__image {
   width: 780px;
   height: 670px;
 }
 
-.FLine {
+/* 10. TEAM */
+.team {
   display: grid;
-  grid-row: auto;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 19px;
-  align-items: center;
+  justify-items: center;
+  gap: 104px;
 }
 
-.gapint {
-  gap: 32px;
-}
-
-.krug {
-  width: 200px;
-  height: 200px;
-  background: rgba(255, 238, 246, 1);
-  border-radius: 50%;
-}
-
-.Who {
-  display: flex;
-  font-size: 28px;
-}
-
-.QQ {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
-}
-
-.one {
-  display: grid;
-  border: 1px solid rgba(184, 184, 184, 1);
-  width: 519px;
-  height: 519px;
-  gap: 60px;
-  border-radius: 50px;
-  justify-content: center;
-  padding: 88px 0px;
-}
-
-.Mark {
-  width: 539px;
-  height: 539px;
-  box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.15);
-}
-
-.MeetTheTeam>p {
+.team__title {
   display: grid;
   place-items: center;
   width: 404px;
@@ -342,176 +313,171 @@ a {
   height: 72px;
 }
 
-.MeetTheTeam {
-  display: grid;
-  justify-items: center;
-  gap: 104px;
+.team__content {
+  gap: 51px;
+  align-items: center;
 }
 
-.fillter {
-  display: flex;
-  gap: 60px;
+.team__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 19px;
   align-items: center;
+}
+
+.team__row--spaced {
+  gap: 32px;
+}
+
+.team-card {
+  display: grid;
+  border: 1px solid rgba(184, 184, 184, 1);
+  width: 519px;
+  height: 519px;
+  gap: 60px;
+  border-radius: 50px;
+  justify-content: center;
+  padding: 88px 0;
+}
+
+.team-card--featured {
+  width: 539px;
+  height: 539px;
+  box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.15);
+}
+
+.team-card__avatar {
+  width: 200px;
+  height: 200px;
+  background: rgba(255, 238, 246, 1);
+  border-radius: 50%;
+}
+
+.team-card__info {
+  gap: 24px;
+}
+
+.team-card__name {
+  display: flex;
+  font-size: 28px;
+}
+
+/* 11. PORTFOLIO */
+.portfolio {
+  display: grid;
+  gap: 60px;
+  justify-items: center;
+}
+
+.portfolio__filter {
+  gap: 60px;
   font-size: 24px;
 }
 
-#All {
+.portfolio__filter-btn {
+  font-weight: bold;
+}
+
+.portfolio__filter-btn--active {
   display: inline-block;
   color: #FFF;
   background-color: #ff5678;
   padding: 4px;
-
 }
 
-.PreviousWork {
-  display: grid;
-  gap: 60px;
-  justify-items: center;
-}
-
-.collum {
+.portfolio__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  width: 100%;
   grid-template-rows: 396.5px 243.5px 121px 519px;
+  width: 100%;
   gap: 32px;
 }
 
-.first {
-  grid-column: 1;
-  grid-row: 1 / 3;
-}
-
-.second {
-  grid-column: 1;
-  grid-row: 3 / 5;
-}
-
-.long {
-  grid-column: 2/4;
-  grid-row: 4;
-}
-
-.hiht {
-  grid-column: 2;
-  grid-row: 1 / 4;
-}
-
-
-.two:nth-child(5) {
-  grid-column: 3;
-  grid-row: 1 / 2;
-}
-
-.two:nth-child(6) {
-  grid-column: 3;
-  grid-row: 2 / 4;
-}
-
-.first,
-.two,
-.hiht,
-.long,
-.second {
+.portfolio__item {
   background-color: rgba(255, 238, 246, 1);
 }
 
-.B {
-  font-weight: bold;
-}
+.portfolio__item--tall-left   { grid-column: 1; grid-row: 1 / 3; }
+.portfolio__item--bottom-left { grid-column: 1; grid-row: 3 / 5; }
+.portfolio__item--wide        { grid-column: 2 / 4; grid-row: 4; }
+.portfolio__item--center      { grid-column: 2; grid-row: 1 / 4; }
+.portfolio__item--small:nth-child(5) { grid-column: 3; grid-row: 1 / 2; }
+.portfolio__item--small:nth-child(6) { grid-column: 3; grid-row: 2 / 4; }
 
-.Testimonial {
-  display: flex;
-  flex-direction: column;
+/* 12. TESTIMONIALS */
+.testimonials {
   align-items: center;
   gap: 100px;
 }
 
-.profills {
+.testimonials__header {
+  justify-content: center;
+  gap: 20px;
+}
+
+.testimonials__header > p {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: center;
+  border-radius: 150px;
+}
+
+.testimonials__track {
   gap: 32px;
   width: 2236px;
 }
 
-.profil {
-  display: flex;
-  flex-direction: column;
+.testimonial-card {
   justify-content: space-between;
-  padding: 60px 40px;
-  border: 1px solid rgba(148, 148, 148, 1);
   width: 412px;
   height: 555px;
+  padding: 60px 40px;
+  border: 1px solid rgba(148, 148, 148, 1);
   border-radius: 150px;
   gap: 46px;
 }
 
-.tete4 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-
-
-}
-
-.tete4>p {
-  display: flex;
-  justify-content: center;
-  border-radius: 150px;
-}
-
-.Spes {
-  height: 672px;
+.testimonial-card--tall {
   width: 460px;
+  height: 672px;
   padding: 130px 40px;
   justify-content: center;
 }
 
-
-.hautpart {
+.testimonial-card__top {
   display: grid;
   justify-items: center;
   gap: 24px;
 }
 
-.baspart {
+.testimonial-card__bottom {
   display: grid;
   justify-items: center;
   gap: 6px;
 }
 
-.Photo {
+.testimonial-card__photo {
   width: 150px;
   height: 150px;
   background: rgba(255, 238, 246, 1);
   border-radius: 50%;
 }
 
-.LRB {
+.arrow-button {
   display: block;
   width: 80px;
   height: 80px;
+  padding: 0;
   background: none;
-  padding: 0px;
   border: none;
   outline: none;
 }
 
-.LRBS {
-  display: flex;
+.testimonials__nav {
   width: 1620px;
-  justify-content: space-between;
 }
 
-/* Страница класса Need held? */
-.Needhelp {
-  display: flex;
-  justify-content: space-between;
-}
-
-.text {
+/* 13. CONTACT & NEWSLETTER */
+.decor-circle {
   width: 780px;
   height: 670px;
   padding: 4px;
@@ -520,144 +486,108 @@ a {
   align-self: center;
 }
 
-.tabloo {
-  display: flex;
-  width: 656px;
-  flex-direction: column;
+.contact__content,
+.newsletter__content {
   align-self: center;
+  width: 656px;
   gap: 100px;
 }
 
-.gapdvad {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.form__group {
   width: 656px;
+  gap: 20px;
 }
 
-.senddata {
-  display: flex;
-  gap: 40px;
-  flex-direction: column;
+.form {
   align-items: flex-start;
+  gap: 40px;
 }
 
-.button {
-  display: grid;
-}
-
-#nameInput,
-#emailInput {
-  height: 70px;
-}
-
-#messageInput {
-  height: 200px;
-}
-
-#nameInput,
-#emailInput,
-#messageInput {
+#contact-name,
+#contact-email,
+#contact-message,
+#news-name,
+#news-email {
   background: rgba(255, 238, 246, 1);
   border: 1px solid rgba(2, 14, 53, 1);
   border-radius: 10px;
   padding: 4px;
 }
 
-/* fotter */
+#contact-name,
+#contact-email,
+#news-name,
+#news-email {
+  height: 70px;
+}
+
+#contact-message {
+  height: 200px;
+}
+
+/* 14. FOOTER */
 .footer {
-  display: flex;
-  gap: 60px;
   position: relative;
   z-index: 0;
   padding-top: 100px;
-  flex-direction: column;
-
+  gap: 60px;
 }
 
-.krugl,
-.krugr {
+.footer__circle {
   position: absolute;
   z-index: -1;
   width: 609px;
   height: 524px;
+  padding: 4px;
   border-radius: 1000px;
   background: rgba(255, 238, 246, 1);
-  padding: 4px;
-
 }
 
-.krugl {
-  top: -27px;
-  left: -105px;
+.footer__circle--left  { top: -27px; left: -105px; }
+.footer__circle--right { top: -39px; left: 1423px; }
+
+.footer__main {
+  padding-inline: 150px;
 }
 
-.krugr {
-  top: -39px;
-  left: 1423px;
+.footer__bottom {
+  background: rgba(2, 14, 53, 1);
+  padding: 32px 150px;
 }
 
-.odsev {
-  display: flex;
-  gap: 17px;
-  flex-direction: column;
-  font-size: 20px;
-}
-
-
-
-.odsix {
-  display: grid;
-  gap: 16px;
-  font-size: 14px;
-}
-
-.treetwo {
-  display: flex;
-  gap: 32px;
-  flex-direction: column;
+.footer__brand {
   align-items: flex-start;
+  gap: 32px;
 }
 
-.ikonki {
+.footer__socials {
   display: flex;
   gap: 40px;
-  flex-direction: row;
 }
 
-.tablica,
-.nizz {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-}
-
-.odinsix {
+.footer__address {
   display: grid;
   gap: 16px;
   font-size: 16px;
 }
 
-.tablica {
-  padding-left: 150px;
-  padding-right: 150px;
+.footer__col {
+  font-size: 20px;
+  gap: 17px;
 }
 
-.nizz {
-  background: rgba(2, 14, 53, 1);
-  padding: 32px 150px;
-  justify-content: space-between;
+.footer__links {
+  display: grid;
+  gap: 16px;
+  font-size: 14px;
 }
 
-.white {
+.footer__text-light {
   font-size: 14px;
   color: rgba(255, 255, 255, 1);
-
 }
 
-.RightSide {
+.footer__legal {
   display: flex;
-  flex-direction: row;
   gap: 60px;
 }
