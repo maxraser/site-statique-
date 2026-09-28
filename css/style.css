@@ -105,7 +105,7 @@ a {
   text-underline-offset: 8px;
 }
 
-#logo_zebb {
+.logo_zebb {
   display: flex;
   height: 41px;
   gap: 4px;
@@ -512,13 +512,11 @@ a {
 }
 
 .text {
-  display: flex;
   width: 780px;
   height: 670px;
   padding: 4px;
   background: rgba(255, 238, 246, 1);
-  gap: 4px;
-  border-radius: 50%;
+  border-radius: 1000px;
   align-self: center;
 }
 
@@ -590,13 +588,13 @@ a {
 }
 
 .krugl {
-  top: -83px;
+  top: -27px;
   left: -105px;
 }
 
 .krugr {
-  top: -83px;
-  left: 1453px;
+  top: -39px;
+  left: 1423px;
 }
 
 .odsev {
